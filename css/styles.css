@@ -322,7 +322,7 @@ address {
     margin-right: 30px;
     margin-bottom: 30px;
     width: 370px;
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .portfolio-list-item:nth-child(3n) {
@@ -339,7 +339,6 @@ address {
     margin-bottom: 94px;
     margin-left: 200px;
     flex-wrap: wrap;
-    background-color: yellow;
 }
 
 
