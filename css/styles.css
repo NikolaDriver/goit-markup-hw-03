@@ -386,5 +386,8 @@ a {
     padding-right: 24px;
     padding-left: 24px;
     padding-bottom: 20px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE; 
 }
 
