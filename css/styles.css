@@ -365,7 +365,8 @@ a {
     color:var(--accent-color);
 }
 .portfolio-buttons:focus {
-    color: var(--accent-color);
+    color: #FFFFFF;
+    background-color: #2196F3;
     
 }
 .portfolio-list-title {
