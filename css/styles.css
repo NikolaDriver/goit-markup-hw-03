@@ -18,6 +18,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+.visually-hidden {
+    visibility: hidden;
+}
 
 img {
     display: block;
@@ -155,9 +158,6 @@ a {
 }
  /*-----------priorities---------*/ 
 
- .priorities-header {
-    visibility:hidden;
-}
 
  .section {
      padding-top: 94px;
