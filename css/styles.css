@@ -51,6 +51,7 @@ a {
 
 .header-section {
     border-bottom: 1px solid; color: #ECECEC;
+    background-color: #FFFFFF;
 }
 
 .header-conteiner {
@@ -312,6 +313,9 @@ a {
 }
 
 /*-------------PORTFOLIO ------------*/
+.portfolio {
+    background-color: #E5E5E5;
+}
 
 .section {
     padding-top: 94px;
