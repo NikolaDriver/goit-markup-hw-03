@@ -19,8 +19,15 @@ ul {
     margin: 0;
 }
 .visually-hidden {
-    visibility: hidden;
-}
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+  }
 
 img {
     display: block;
@@ -36,8 +43,6 @@ img {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    background: #E5E5E5;
-    
 }
 
 button {
@@ -59,8 +64,7 @@ a {
 /*----------------HEADER-------------*/
 
 .header-section {
-    border-bottom: 1px solid; color: #ECECEC;
-    background-color: #FFFFFF;
+    border-bottom: 1px solid color #ECECEC;
 }
 
 .header-conteiner {
@@ -142,7 +146,8 @@ a {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color:var(--hero-title-color);
+    color: var(--hero-title-color);
+
 }
 .hero-button {
     display: inline-block;
@@ -164,7 +169,13 @@ a {
 }
  /*-----------priorities---------*/ 
 
-
+.priorities-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--third-title-color);
+}
 
 
  .priorities-title:not(:last-child){
@@ -177,16 +188,8 @@ a {
     display: flex;
  }
 
-.priorities-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14px;
-    letter-spacing: 0.03em;
-    color:var(--second-title-color);
-}
-
 .priorities-text {
-    margin-top: 26px;
+    margin-top: 10px;
 
     font-weight: 400;
     font-size: 14px;
@@ -196,8 +199,15 @@ a {
 }
 /*-------------specification------------*/
 
-.specification {
+.section.specification {
     padding-top: 0px;
+}
+.specification-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
 }
 
 .specification-item:not(:last-child){
@@ -211,18 +221,26 @@ a {
 
 .specification-title {
     text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color:var(--second-title-color);
 }
 /*-------------TEAM------------*/
 
 .team {
     background-color:#F5F4FA ;
 }
-
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+.team-list-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--third-title-color);
+}
 
 .team-list {
     display: flex;
@@ -245,19 +263,7 @@ a {
 }
 .team-title {
     text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color:var(--second-title-color);
- }
-.team-list-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--third-title-color)
-    }
+}
 
 .team-list-profession{
     margin-top: 10px;
@@ -316,14 +322,6 @@ a {
 }
 
 /*-------------PORTFOLIO ------------*/
-.portfolio {
-    background-color: #E5E5E5;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .portfolio-nav-item:not(:last-child){
     margin-right: 8px;
@@ -335,6 +333,8 @@ a {
 }
 
 .portfolio-buttons {
+    padding: 6px 22px;
+
     font-family: inherit; 
     background-color: #F5F4FA;
     font-weight: 500;
@@ -360,26 +360,30 @@ a {
     flex-wrap: wrap;
     margin-top: 50px;
 }
+.portfolio-list-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--third-title-color);
+
+}
+
 .portfolio-list {
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
 .portfolio-buttons:hover {
-    color:var(--accent-color);
+    color: #FFFFFF;
+    background-color: var(--accent-color);
 }
 .portfolio-buttons:focus {
     color: #FFFFFF;
     background-color: #2196F3;
     
 }
-.portfolio-list-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color:var(--third-title-color);
-}
+
 .portfolio-list-type {
     font-size: 16px;
     line-height: 1.87;
